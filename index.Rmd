@@ -1,9 +1,11 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "Google Symposium"
+author: "Zeel B Patel"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
 
-# Down the rabbit-hole
+# Preface
+
+Here I have put the detailed notes taken at Google symposium 2021.
 

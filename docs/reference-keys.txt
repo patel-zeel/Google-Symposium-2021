@@ -1,0 +1,15 @@
+preface
+day-1-7-april-2021
+opening-keynote-by-jay-yagnik-youtube-900-am
+patterns-of-progress-in-ai
+future-of-artificial-general-intelligence-agi
+societal-impact-with-ai
+qa
+general-ml-session-by-katherine-heller-10-am
+learning-to-detect-sepsis-with-a-multitask-gaussian-process-rnn-classifier
+graph-coupled-hmms-for-modeling-the-spread-of-infection
+hierarchical-graph-coupled-hmms-for-heterogeneous-personalized-health-data
+useful-resources
+panel-discussion-on-academia-and-industry-research-careers-130-pm-youtube
+qa-1
+a-caucus-race-and-a-long-tale
