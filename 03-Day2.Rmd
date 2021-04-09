@@ -3,15 +3,15 @@
 ## A general ML session bt [Geoffrey Hinton](https://www.cs.toronto.edu/~hinton/) 9 AM
 
 Prof. Geoffrey gave a talk on a non-working system called [GLOM](https://arxiv.org/pdf/2102.12627.pdf). It tries to solve the question "How
-can a neural network with a fixed architecture parse an image into a partwhole hierarchy?" Geoffrey believes that if GLOM can be made to work in neural networks and transformers, it will significantly improve the interpretability.
+can a neural network with a fixed architecture parse an image into a part-whole hierarchy?" Geoffrey believes that if GLOM can be made to work in neural networks and transformers, it will significantly improve interpretability.
 
 ## A AI4SG session by [Pradeep Varakantham](http://www.mysmu.edu/faculty/pradeepv/) 10:30 AM
 
-Pradeep talked about a non-trivial solution to optimal supply-demand ecosystem which is not working based on greedy supply to the immediate demands (e.g. assigning closest Uber taxi to a customer). He proposes Resource constrained RL model for the problem where several constraints specific to a problem are supplied to an RL algorithm. He called it ReCo-RL (Resource constrained RL problem). Another applied approach is Deep Q network. Pradeep is trying to solve problems related to Taxi fleets, Emergency Response, Traffic and Security Patrols, and, Bike sharing systems.
+Pradeep talked about a non-trivial solution to an optimal supply-demand ecosystem that is not working based on greedy supply to the immediate demands (e.g., assigning the closest Uber taxi to a customer). He proposes a Resource-constrained RL model for the problem where several constraints specific to a problem are supplied to an RL algorithm. He called it ReCo-RL (Resource-constrained RL problem). Another applied approach is the Deep Q network. Pradeep is trying to solve problems related to Taxi fleets, Emergency Response, Traffic and Security Patrols, and, Bike-sharing systems.
 
 ## A General ML Session by [M Pawan](https://eng.ox.ac.uk/people/pawan-mudigonda/) and [K Dvijotham](https://dj-research.netlify.app/), 2 PM
 
-The talk covers various techniques to prevent adversarial attacks on image classifiers. These techniques involve verification of the neural networks trained on the datasets. 
+The talk covers various techniques to prevent adversarial attacks on image classifiers. These techniques involve the verification of the neural networks trained on the datasets. 
 
 ### Additional resources
   
