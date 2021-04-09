@@ -1,0 +1,65 @@
+# Day 3 (9-April-2021) 
+
+## ML foundations by [Ravi kumar](https://sites.google.com/site/ravik53/) 9 AM
+
+Ravi talks about a generic framework for online learning. A simple problem to model in this framework can be taken as ski-rental problem where renting cost is 1\$ but ski cost is 25\$. Algorithm tries to give theoretical bounds on maximum cost involved before making correct decision. Ravi also emphasizes that online learning is pessimistic opposted to machine learning which tries to learn average behavior.
+
+
+The key idea is to incorporate 'hints' at each time-step before making a decision. The research is trying to achieve close to offline level performance when hints are good but also ensure to perform as good as using no hints in worst case when all the hints are bad.
+
+
+Ravi starts with basic formulation of the problem and builds upon a story on how research has evolved at each stage to solve the problems of previous solutions. Worst case cost bounds are derived for each case by various researchers. At the end, final case is covered where multiple hints are incorporated at a single time-step. 
+
+
+On the practical side, a minimal set of experiments were performed on resnet classifier where hint is previous gradient. I feel that we may try to model our online prediction models this way.
+
+### Additional resources
+
+* [Online Learning with Imperfect Hints](https://arxiv.org/abs/2002.04726)
+* [Online Linear Optimization with Many Hints](https://arxiv.org/abs/2010.03082)
+
+## ML foundations: Stochastic Gradient Descent (Theory v/s practice) by [Prateek Jain](https://www.prateekjain.org/), 10:30 AM
+
+First, Prateek shows how different is the SGD used in practice than in theory in terms of convexity, non i.i.d selection of samples, batch size, step size etc. Then the discussion moves on how fast gradient descent can find a p-order stationary point. It turns out that for $p\ge4$, finding stationary points is NP-hard problem. Somehow, gradient descent can still find local optima but the rates are unknown. 
+
+Gradient descent can find the first order stationary points. Computing hessian is expensive and so is to find second order stationary points. But, there is a simple algorithm to find second order stationary point with gradients alone. It is noisy GD where you add an isotropic noise to solution and re-do GD. Practically, it is believed that SGD is equivalent to this and it finds second order stationary points with higher probability. It is an open problem to show this concretely.
+
+Prateek concludes the talk by mentioning that if one analyses SGD, it might be possible to overcome the current problems it has and also bring the convergence rate further down.
+
+## Panel discussion: AI in India, 1 PM [YouTube link](https://www.youtube.com/watch?v=YCD0F3njvJI)
+
+The discussion was led by [Partha Talukdar](http://talukdar.net/) from Google. The first question was about the journy of [Dr. Geetha Manjunath](https://www.niramai.com/team/geetha-manjunath/) from [Niramai](https://www.niramai.com/) who has developed a successful AI solution for early detection of breast cancer.
+
+Geetha explains that X-ray based cancer detection is not affordable to everyone and the machines are not affordable by most of the hospitals. They were able to successfully leverage thermography to solve this problem and make the test affordable as low as 2\$ in rural India. She also mentions that they have regulatory clearances by Indian and Europian standards. 
+
+[Dr. Balaraman Ravindran](https://www.cse.iitm.ac.in/~ravi/) admires the end-to-end work done by Niramai reminding that in India, most verticals do not have the base technology ready to put an AI on top of that. Adding to that, he briefly talks about need of fairness in AI as per the Indian context.
+
+[Pankaj Gupta](https://www.linkedin.com/in/pankajatlinkedin/), Sr. Director of Engineering at Google Pay, throws some insignts on need of connecting majority of India digitally using AI.
+
+### Q&A
+
+* Q: What might be good sources to look at updates/problems tackled with AI in India by various industries?
+
+  A: Partha says that a symposium like the current can be insightful for this. Geetha suggests to look at FDA approved startups and a website called [IndiaAI](https://indiaai.gov.in/). Ravi suggests a very good website called AI4Bharat that is maintained specifically for this purpose. Pankaj strongly recommends Twitter and according to him, many latest cutting-edge things are first shared on Twitter nowadays. 
+  
+* Q: What AI work is happending in India to mitigate Air pollution? What are potential directions with AI in this field?
+
+  A: Ravi describes a bit on mobile sensors used in Tamilnadu to monitor air pollution. According to him, due to heterogenety in AQI in Delhi, even regression modeling or time-series predictions are also of great help in understanding the pollution. Pankaj suggests cerca center in IIT Delhi and work of Prof. Rijurekha. 
+  
+* Q: How to take AI solution to the ground level where one has to deal with bureaucracy?
+
+  A: Geetha suggests to approach negative feedback with positive mindset and improve what one really lacks in the implementation. 
+  
+* Q: How PhD students can work with industries to solve problems with AI?
+
+  A: Ravi mentions that there are really limited people who can work with Google, Microsoft like compnies so try to see if you can be competitive by creating a stratup. Geetha resonates a bit by suggesting to work with AI startups to solve real hard problems.
+  
+### Final thoughts
+
+Geetha encourgues all to work with a problem that one can relate with and go end-to-end without stopping at algorithmic level only. Ravi suggests to be aware of the ecosystem of area where one might be trying to solve a problem. According to him, sometimes AI is consuming really small part of the entire problem so be aware of it and understand it to be successful. Pankaj suggests not to get bogged down by the difficulties and be around the right people. 
+
+### Websites and resources
+  * [FDA approved algortihms](https://models.acrdsi.org/)
+  * [AI for Bharat](https://ai4bharat.org/)
+  * [India AI](https://indiaai.gov.in/)
+  * [CENTRE OF EXCELLENCE FOR RESEARCH ON CLEAN AIR](https://cerca.iitd.ac.in/)

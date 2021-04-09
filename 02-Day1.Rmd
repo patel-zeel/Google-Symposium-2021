@@ -63,29 +63,29 @@ Jay divided his presentation in three topics
   A: Jay does not think it is an requirement for AGI (quoting airoplanes don't flap their wings philosophy). He feels that taking inspiration from nature is good but one has to stay within the limits of what machines can do.
   
   
-# General ML session by [Katherine Heller](https://www2.stat.duke.edu/~kheller/) 10 AM
+## General ML session by [Katherine Heller](https://www2.stat.duke.edu/~kheller/) 10 AM
 
 Katherine talked elaborately about several research projects of her.
 
-## [Learning to Detect Sepsis with a Multitask Gaussian Process RNN Classifier](http://proceedings.mlr.press/v70/futoma17a.html)
+### [Learning to Detect Sepsis with a Multitask Gaussian Process RNN Classifier](http://proceedings.mlr.press/v70/futoma17a.html)
 
 In this work Multitask Gaussian process models were used to convert irregularly spaced data into equally spaced time-series data. After that, RNN model was used to predict the probability of having sepsis on a real world data. Authors use  Lanczos method to cope up with time-complexity of Gaussian process and to draw approximate samples. Authors were able to improve the performance on previous work significantly.
 
-## [Graph-Coupled HMMs for Modeling the Spread of Infection](https://arxiv.org/ftp/arxiv/papers/1210/1210.4864.pdf)
+### [Graph-Coupled HMMs for Modeling the Spread of Infection](https://arxiv.org/ftp/arxiv/papers/1210/1210.4864.pdf)
 
 Authors try to efficiently model the spread of infection with GCHMMs leveraging sparsity in social networks. Authors successfully leverage mobile phone
 data collected from 84 people over an extended period of time to model the spread of infection on an individual level
 
-## [Hierarchical Graph-Coupled HMMs for Heterogeneous Personalized Health Data](http://kt.ijs.si/interno/Proceedings/SIGKDD2015/docs/p239.pdf)
+### [Hierarchical Graph-Coupled HMMs for Heterogeneous Personalized Health Data](http://kt.ijs.si/interno/Proceedings/SIGKDD2015/docs/p239.pdf)
 
 In this work, HGCHMMs were used to detect infections in a small mobile community. The probability of infections were predicted for each person each day.
 
-## Useful resources
+### Useful resources
   
   * [Interpretable Machine Learning: Fundamental Principles and 10 Grand Challenges](https://arxiv.org/abs/2103.11251)
   
   
-# Panel Discussion on Academia and Industry Research Careers 1:30 PM [YouTube](https://www.youtube.com/watch?v=aP4urTSNQR4)
+## Panel Discussion on Academia and Industry Research Careers, 1:30 PM [YouTube link](https://www.youtube.com/watch?v=aP4urTSNQR4)
 
 The discussion was moderated by [Manish Gupta](https://research.google/people/106704/). The panel members were diverse from well-established researchers to a final year PhD student. Manish started the discussion with a question "How PhD has helped you in your career?".
 
@@ -99,7 +99,7 @@ The discussion was moderated by [Manish Gupta](https://research.google/people/10
 
 Manish mentioned an article in The Hindu by Pankaj on "[What can India do to promote more quality Ph.D programmes?](https://www.thehindu.com/education/what-can-india-do-to-promote-more-quality-phd-programmes/article34234922.ece)" and asked Pankaj on sharing more views on the topic. Pankaj brought an insight from his experience that a fresh PhD graduate from India is not considered as good as candidates from foreign university and thus Indian PhD students need to get global exposure. 
 
-## Q&A
+### Q&A
 
 * Q: How should one decide between academic and industry research careers? How harder is it to move from one to another?
    
@@ -107,4 +107,10 @@ Manish mentioned an article in The Hindu by Pankaj on "[What can India do to pro
   
 * Q: What do you look for in a candidate in selection process?
 
-  A: Pankaj says that, for assistant professor role, they prefer the high potential (how much he knows outside his area) despite having low number of publications. 
+  A: Pankaj says that, for assistant professor role, they prefer the high potential (how much one knows outside their area) despite having low number of publications. Arati emphasizes on the problem solving skills and thinking beyond narrow area at the same time having enough depth in the area of expertise. Abhijnan gives view point of a candidtate saying that he would look if he is confirtable with other team members. Preksha prefers a team which has overlapping interests with her work.
+  
+### Closing Question
+
+Manish brings the session to a close by seeking general advice for students from the panelists. 
+
+Preksha recommends to go for an internship in an industry. abhijnan suggests that if one is confused between academia and industry after the internship, they may spend 2 years in either field after their PhD. Arati suggests to be passionate about work wherever one is. Pankaj believes that one exposure to acadamia and industry helps in both careers. So, one shoud definitely go for an internship in their PhD because they are anyway getting academia exposure in the PhD.

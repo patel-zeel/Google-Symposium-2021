@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Google Symposium</title>
-  <meta name="description" content="Google Symposium" />
+  <title>GS 4 Day 3 (9-April-2021) | Google Symposium</title>
+  <meta name="description" content="GS 4 Day 3 (9-April-2021) | Google Symposium" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Google Symposium" />
+  <meta property="og:title" content="GS 4 Day 3 (9-April-2021) | Google Symposium" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Google Symposium" />
+  <meta name="twitter:title" content="GS 4 Day 3 (9-April-2021) | Google Symposium" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="day-2-8-april-2021.html"/>
 
-<link rel="next" href="day-1-7-april-2021.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -135,23 +135,70 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Google Symposium</h1>
-<p class="author"><em>Zeel B Patel</em></p>
-<p class="date"><em>2021-04-10</em></p>
+<div id="day-3-9-april-2021" class="section level1" number="4">
+<h1><span class="header-section-number">GS 4</span> Day 3 (9-April-2021)</h1>
+<div id="ml-foundations-by-ravi-kumar-9-am" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> ML foundations by <a href="https://sites.google.com/site/ravik53/">Ravi kumar</a> 9 AM</h2>
+<p>Ravi talks about a generic framework for online learning. A simple problem to model in this framework can be taken as ski-rental problem where renting cost is 1$ but ski cost is 25$. Algorithm tries to give theoretical bounds on maximum cost involved before making correct decision. Ravi also emphasizes that online learning is pessimistic opposted to machine learning which tries to learn average behavior.</p>
+<p>The key idea is to incorporate ‘hints’ at each time-step before making a decision. The research is trying to achieve close to offline level performance when hints are good but also ensure to perform as good as using no hints in worst case when all the hints are bad.</p>
+<p>Ravi starts with basic formulation of the problem and builds upon a story on how research has evolved at each stage to solve the problems of previous solutions. Worst case cost bounds are derived for each case by various researchers. At the end, final case is covered where multiple hints are incorporated at a single time-step.</p>
+<p>On the practical side, a minimal set of experiments were performed on resnet classifier where hint is previous gradient. I feel that we may try to model our online prediction models this way.</p>
+<div id="additional-resources-1" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Additional resources</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2002.04726">Online Learning with Imperfect Hints</a></li>
+<li><a href="https://arxiv.org/abs/2010.03082">Online Linear Optimization with Many Hints</a></li>
+</ul>
 </div>
-<div id="preface" class="section level1" number="1">
-<h1><span class="header-section-number">GS 1</span> Preface</h1>
-<p>Here I have put the detailed notes taken at Google symposium 2021.</p>
+</div>
+<div id="ml-foundations-stochastic-gradient-descent-theory-vs-practice-by-prateek-jain-1030-am" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> ML foundations: Stochastic Gradient Descent (Theory v/s practice) by <a href="https://www.prateekjain.org/">Prateek Jain</a>, 10:30 AM</h2>
+<p>First, Prateek shows how different is the SGD used in practice than in theory in terms of convexity, non i.i.d selection of samples, batch size, step size etc. Then the discussion moves on how fast gradient descent can find a p-order stationary point. It turns out that for <span class="math inline">\(p\ge4\)</span>, finding stationary points is NP-hard problem. Somehow, gradient descent can still find local optima but the rates are unknown.</p>
+<p>Gradient descent can find the first order stationary points. Computing hessian is expensive and so is to find second order stationary points. But, there is a simple algorithm to find second order stationary point with gradients alone. It is noisy GD where you add an isotropic noise to solution and re-do GD. Practically, it is believed that SGD is equivalent to this and it finds second order stationary points with higher probability. It is an open problem to show this concretely.</p>
+<p>Prateek concludes the talk by mentioning that if one analyses SGD, it might be possible to overcome the current problems it has and also bring the convergence rate further down.</p>
+</div>
+<div id="panel-discussion-ai-in-india-1-pm-youtube-link" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Panel discussion: AI in India, 1 PM <a href="https://www.youtube.com/watch?v=YCD0F3njvJI">YouTube link</a></h2>
+<p>The discussion was led by <a href="http://talukdar.net/">Partha Talukdar</a> from Google. The first question was about the journy of <a href="https://www.niramai.com/team/geetha-manjunath/">Dr. Geetha Manjunath</a> from <a href="https://www.niramai.com/">Niramai</a> who has developed a successful AI solution for early detection of breast cancer.</p>
+<p>Geetha explains that X-ray based cancer detection is not affordable to everyone and the machines are not affordable by most of the hospitals. They were able to successfully leverage thermography to solve this problem and make the test affordable as low as 2$ in rural India. She also mentions that they have regulatory clearances by Indian and Europian standards.</p>
+<p><a href="https://www.cse.iitm.ac.in/~ravi/">Dr. Balaraman Ravindran</a> admires the end-to-end work done by Niramai reminding that in India, most verticals do not have the base technology ready to put an AI on top of that. Adding to that, he briefly talks about need of fairness in AI as per the Indian context.</p>
+<p><a href="https://www.linkedin.com/in/pankajatlinkedin/">Pankaj Gupta</a>, Sr. Director of Engineering at Google Pay, throws some insignts on need of connecting majority of India digitally using AI.</p>
+<div id="qa-2" class="section level3" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Q&amp;A</h3>
+<ul>
+<li><p>Q: What might be good sources to look at updates/problems tackled with AI in India by various industries?</p>
+<p>A: Partha says that a symposium like the current can be insightful for this. Geetha suggests to look at FDA approved startups and a website called <a href="https://indiaai.gov.in/">IndiaAI</a>. Ravi suggests a very good website called AI4Bharat that is maintained specifically for this purpose. Pankaj strongly recommends Twitter and according to him, many latest cutting-edge things are first shared on Twitter nowadays.</p></li>
+<li><p>Q: What AI work is happending in India to mitigate Air pollution? What are potential directions with AI in this field?</p>
+<p>A: Ravi describes a bit on mobile sensors used in Tamilnadu to monitor air pollution. According to him, due to heterogenety in AQI in Delhi, even regression modeling or time-series predictions are also of great help in understanding the pollution. Pankaj suggests cerca center in IIT Delhi and work of Prof. Rijurekha.</p></li>
+<li><p>Q: How to take AI solution to the ground level where one has to deal with bureaucracy?</p>
+<p>A: Geetha suggests to approach negative feedback with positive mindset and improve what one really lacks in the implementation.</p></li>
+<li><p>Q: How PhD students can work with industries to solve problems with AI?</p>
+<p>A: Ravi mentions that there are really limited people who can work with Google, Microsoft like compnies so try to see if you can be competitive by creating a stratup. Geetha resonates a bit by suggesting to work with AI startups to solve real hard problems.</p></li>
+</ul>
+</div>
+<div id="final-thoughts" class="section level3" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Final thoughts</h3>
+<p>Geetha encourgues all to work with a problem that one can relate with and go end-to-end without stopping at algorithmic level only. Ravi suggests to be aware of the ecosystem of area where one might be trying to solve a problem. According to him, sometimes AI is consuming really small part of the entire problem so be aware of it and understand it to be successful. Pankaj suggests not to get bogged down by the difficulties and be around the right people.</p>
+</div>
+<div id="websites-and-resources" class="section level3" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Websites and resources</h3>
+<ul>
+<li><a href="https://models.acrdsi.org/">FDA approved algortihms</a></li>
+<li><a href="https://ai4bharat.org/">AI for Bharat</a></li>
+<li><a href="https://indiaai.gov.in/">India AI</a></li>
+<li><a href="https://cerca.iitd.ac.in/">CENTRE OF EXCELLENCE FOR RESEARCH ON CLEAN AIR</a></li>
+</ul>
 
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="day-2-8-april-2021.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="day-1-7-april-2021.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -182,7 +229,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/patel-zeel/Google-Symposium-2021/edit/master/index.Rmd",
+"link": "https://github.com/patel-zeel/Google-Symposium-2021/edit/master/04-Day3.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -190,7 +237,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/patel-zeel/Google-Symposium-2021/blob/master/index.Rmd",
+"link": "https://github.com/patel-zeel/Google-Symposium-2021/blob/master/04-Day3.Rmd",
 "text": null
 },
 "download": null,
