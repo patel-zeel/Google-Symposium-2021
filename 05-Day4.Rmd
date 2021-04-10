@@ -1,0 +1,19 @@
+# Day 4 (10-April-2021)
+
+## ML Foundations: A story on generalization by [Hanie Sedghi](https://research.google/people/HanieSedghi/) 9 AM
+
+Hanie focuses on generelization in DL models and what plays a role in it. She first shows the work on proving generelization bounds in terms of training loss, number of parameters, Lipschitz constant and distance from the initial weights. She shows that network criticality is mostly capturing the generealization error in well-known CNN models. 
+
+Hanie introduces to a new lens called "Deep Bootstrap" for measuring generelization error where test error is captured in indeal world (generative model) and real world (actual data) and compared. One should expect it to be lowest if model is generelizing well on the real data. She shows some experimental results on NN models with this technique. 
+
+After this Hanie covers what is transfered in transfer learning. 
+
+## Overview of research at Google Research India by [Manish Gupta](https://research.google/people/106704)
+
+Manish starts with four different areas where the research is focused: i) Pure research; ii) infrastructure buildup; iii) Product engagements; iv) New product innovations
+
+Manish gives an introduction and overview of various teams and team members at Google. After that, he answers the quesries related to internship and full time opportunities at Google research, India. 
+
+## Closing Keynote by [Cordelia Schmid](https://research.google/people/CordeliaSchmid/) [YouTube link](https://www.youtube.com/watch?v=PGod_csWSX0)
+
+Cordelia gives a brief talk on machine vision perception. She explains a novel method of creating synthetic datasets of human activities. She also explains a model called VideoBERT for video predictions. The talk ends with detailed Q&A on vision topic.
